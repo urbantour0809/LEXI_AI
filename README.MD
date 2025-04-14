@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python" />
+  <img src="https://img.shields.io/badge/Python-3.12-blue?logo=python" />
   <img src="https://img.shields.io/badge/FastAPI-💨-brightgreen?logo=fastapi" />
   <img src="https://img.shields.io/badge/EXAONE-3.5-informational?logo=deeplearning" />
   <img src="https://img.shields.io/badge/ChromaDB-Search-orange" />
-  <img src="https://img.shields.io/badge/Legal-Bert-Search-blue" />
+  <img src="https://img.shields.io/badge/Legal_Bert-Search-blue" />
 </p>
 
 # ⚖️ LEXI Backend – 법률 질문 & 계약서 생성기 (EXAONE 기반)
