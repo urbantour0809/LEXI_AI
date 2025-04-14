@@ -1,7 +1,7 @@
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:4e54c8,100:8f94fb&height=200&section=header&text=LEXI_AI%20⚖️&fontSize=38&fontColor=ffffff&fontAlignY=35&desc=Korean%20Legal%20RAG%20Assistant%20powered%20by%20EXAONE%203.5&descAlignY=60&animation=fadeIn)
 
-# ⚖️ LEXI_AI - 한국어 법률 RAG 웹 애플리케이션
+# ⚖️ LEXI_AI - AI 민사 상담 웹 애플리케이션
 
 **LEXI_AI**는 한국어에 최적화된 대형언어모델 **EXAONE 3.5** 기반으로 작동하며,  
 법률 질문 응답 및 계약서 자동 생성을 수행하는 FastAPI 기반 백엔드 프로젝트입니다.
