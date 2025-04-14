@@ -33,7 +33,7 @@
 
 ### ✅ Legal-BERT 모델 파인튜닝 (검색 특화)
 - [Huggingface의 Legal-BERT](https://huggingface.co/nlpaueb/legal-bert-base-uncased) 모델을 파인튜닝하여 **법률 전문 검색용 임베딩 모델**로 활용하였습니다.
-- 사용자의 질문을 입력받으면, 다음과 같은 구조로 동작합니다:
+- 사용자의 질문을 입력받으면, 다음과 같은 구조로 동작합니다: <br>
 **[ 사용자 질문 입력 ]** ⇒ **[ EXAONE 3.5 모델이 질문 이해 ]** ⇒ **[ Legal-BERT 모델로 관련 법령 및 판례 벡터 검색 ]** ⇒ **[ 관련 법률 내용을 참조하여 EXAONE이 답변 생성 ]**
 ---
 
