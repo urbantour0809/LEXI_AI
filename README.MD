@@ -192,14 +192,6 @@ ngrok http 8001
 
 ---
 
-## 🔐 기타 보안 및 운영 팁
-
-- `.env` 파일은 절대 외부에 노출하지 마세요!
-- 모델 캐시가 누적되는 경우 `~/.cache/huggingface/` 경로 정리 필요
-- PDFKit은 서버 배포 시 `wkhtmltopdf` 경로 설정 필수 (`/usr/bin/wkhtmltopdf`)
-
----
-
 ## 🧪 테스트용 API 예시 (Postman)
 
 ```json
