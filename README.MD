@@ -55,14 +55,86 @@ Fine-tuned Legal-BERT로 벡터 DB에서 유사 법령/판례 검색
 EXAONE이 참조하여 답변 생성
 ```
 
-### 🧠 주요 프롬프트 전략
+### 🧠 주요 프롬프트
 
 **답변 시스템 (answer.py)**:
-- 문제 정의 → 법령 기반 논리 분석 → 실무 관점 해결책 제시
+```python
+# 답변 (answer.py)
+    prompt = f"""
+    [시스템 지시사항]
+    당신은 대한민국의 전문 법률 자문가입니다. 
+    10년 이상의 실무 경험을 바탕으로 정확하고 실용적인 법률 자문을 제공합니다.
+    모든 답변은 한국어로 작성하며, 다음 형식을 준수합니다:
+
+    1. 먼저 질문의 핵심 쟁점을 명확히 파악하여 제시
+    2. 관련 법령과 판례를 근거로 논리적인 분석 제공
+    3. 실무적 관점에서 구체적인 해결방안 제시
+    4. 필요한 경우 추가적인 법적 고려사항 안내
+
+    답변 작성 시 주의사항:
+    - 별표(*) 기호를 사용하지 마세요
+    - 글머리 기호가 필요할 경우 '-' 또는 '1.', '2.' 등의 숫자를 사용하세요
+    - 강조가 필요한 경우 '중요:', '주의:' 등의 접두어를 사용하세요
+
+    [사용자 질문]
+    {query}
+
+    [참고 법령 및 판례]
+    {relevant_text}
+
+    [법률 검토 의견]
+    """
+```
 
 **계약서 생성 (doc_create.py)**:
-- 제목/본문/날짜/서명 포함한 정식 계약서 작성  
-- 금액/날짜는 숫자+한글 병기, 서식 명확화
+```python
+prompt = f"""
+    다음 정보를 바탕으로 {contract_type}를 작성해주세요.
+    
+    [필수 작성 지침]
+    1. 문서 형식:
+       - 제목, 전문, 본문, 날짜, 서명란 순으로 구성
+       - 각 조항은 명확한 번호와 소제목 포함
+       - 전문에는 계약의 배경과 목적을 명시
+    
+    2. 문서 특성:
+       {document_type_instructions.get(contract_type, "계약 조항을 명확하게 작성하세요.")}
+    
+    3. 형식 요구사항:
+       - 법률 용어는 정확하고 일관되게 사용
+       - 모든 금액과 날짜는 숫자와 한글을 병기
+       - 각 페이지 하단에 당사자 날인란 포함
+    
+    [계약 정보]
+    계약 당사자:
+    - 갑측: {party_a}
+    - 을측: {party_b}
+    
+    계약일자: {contract_date}
+    
+    추가 계약내용:
+    {additional_info}
+
+    --- 계약서 시작 ---
+    """
+```
+---
+
+## 🖥️ Windows 환경에서 GPU 사용 가이드
+
+1. **Windows에서 WSL(리눅스 환경) 설치**
+2. **Anaconda 또는 Miniconda로 가상환경 생성**
+3. **CUDA 버전 확인**
+   
+bash
+   nvidia-smi
+
+4. **CUDA 호환 PyTorch 설치**
+   
+bash
+   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+
+5. **Pytorch를 설치 하면 cuDNN 과 같은 필요한 라이브러리들이 자동적으로 설치가 됩니다.**
 
 ---
 
@@ -171,7 +243,11 @@ quantization_config = BitsAndBytesConfig(
 
 - 본 프로젝트는 개인 연구 및 학습 목적으로 배포되었습니다.
 - 기술 및 모델 관련 문의는 Issues 또는 이메일로 보내주세요.
-- License: [MIT](LICENSE)
+- [EXAONE 3.5](https://huggingface.co/LGAI-EXAONE)
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [ChromaDB](https://www.trychroma.com/)
+- [Cloudtype](https://cloudtype.io/)
+- ngrok
 
 ---
 
