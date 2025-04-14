@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/ChromaDB-Search-orange" />
 </p>
 
-# ⚖️ Lawyer.ai Backend – 법률 질문 & 계약서 생성기 (EXAONE 기반)
+# ⚖️ LEXI Backend – 법률 질문 & 계약서 생성기 (EXAONE 기반)
 
 > 한국어 법률 질문 응답부터 자동 계약서 생성까지, EXAONE 3.5 기반 FastAPI 백엔드
 
