@@ -11,7 +11,7 @@
 
 ---
 
-## 🌟 왜 EXAONE 3.5?
+## 🌟 왜 EXAONE 3.5? <img src="https://www.lgresearch.ai/img/solution/exaone_logo.png" alt="EXAONE Logo" width="28" style="vertical-align: middle;"/>
 
 - ✅ **한국어 특화 모델**: 한국어 법률/판례에 최적화된 EXAONE 3.5 사용
 - ✅ **자연어 이해력 우수**: 복잡한 문장 구조도 안정적으로 처리
