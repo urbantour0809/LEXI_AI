@@ -69,6 +69,7 @@ pdfkit.from_string(html_html, pdf_path, configuration=pdfkit.configuration(wkhtm
    ```bash
    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
    ```
+5. **Pytorch를 설치 하면 cuDNN 과 같은 필요한 라이브러리들이 자동적으로 설치가 됩니다.**
 
 ---
 
