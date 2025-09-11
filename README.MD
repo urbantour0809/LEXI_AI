@@ -89,15 +89,6 @@ LEXI_AI/
 
 ---
 
-## 📚 향후 계획  
-
-- [ ] 판례 요약 기능  
-- [ ] 사용자 인증 및 저장소 연동  
-- [ ] 계약서 버전 관리 (수정 이력 추적)  
-- [ ] 실시간 상담 기록 대시보드  
-
----
-
 <p align="center">
   <b>LEXI – 한국어 법률에 특화된 AI 어시스턴트</b><br/>
   <em>Powered by EXAONE & Legal-BERT</em>
