@@ -20,18 +20,15 @@
 
 ---
 
-## 🛠 기술 스택  
+## ⚙️ 기술 스택
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/EXAONE-3.5-blueviolet"/>
-  <img src="https://img.shields.io/badge/LegalBERT-NLP-orange"/>
-  <img src="https://img.shields.io/badge/ChromaDB-VectorDB-yellow"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black"/>
-  <img src="https://img.shields.io/badge/SpringBoot-6DB33F?logo=springboot&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black"/>
-</p>  
+| 영역 | 기술 |
+|------|------|
+| **Backend** | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=white) |
+| **Frontend** | ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) |
+| **Database & VectorDB** | ![ChromaDB](https://img.shields.io/badge/ChromaDB-VectorDB-yellow) |
+| **AI/ML** | ![Exaone](https://img.shields.io/badge/Exaone%203.5-AI-blueviolet) ![LegalBERT](https://img.shields.io/badge/LegalBERT-NLP-orange) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white) |
+| **Infra & DevOps** | ![Cloudtype](https://img.shields.io/badge/Cloudtype-4285F4?logo=googlecloud&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black) ![Ngrok](https://img.shields.io/badge/Ngrok-1F1F1F?logo=ngrok&logoColor=white) |
 
 ---
 
